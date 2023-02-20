@@ -11,13 +11,15 @@ try:
    my_visit_card = (f'Приятно познакомиться {name.capitalize()}. Меня зовут Jess, мне 28 лет.Учусь в TeachMySkills.')
    print(my_visit_card)
    # Смаил
-   print('\U0001f600')
-   print("\N{grinning face}")
-   print("\N{winking face}")
-   print(date_of_birth/month_of_birth/year_of_birth/mail)
+   print("\U0001f600 \n \N{grinning face} \n \N{winking face}")
 # Завершение блока try-except
-except:
+except ValueError:
       print('Ошибка ввода даных')
+except KeyError:
+   pass
+except Exception:
+   pass
 # Дополнительный но не обезательный оператор
+
 finally:
-       print('Програма завершена')
+   print('Програма завершена')
